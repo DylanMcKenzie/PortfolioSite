@@ -14,11 +14,13 @@ body {
 }
 
 nav {
+    z-index: 1000; 
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
 }
 
 nav h2 {
@@ -43,6 +45,7 @@ nav a:hover {
 nav ul {
     list-style-type: none;
     margin: 0;
+    margin-right: 1vw;
     padding: 0;
     display: flex;
 }
@@ -51,9 +54,32 @@ nav li {
     margin-left: 20px;
 }
 
-#intro, #about {
+#intro {
     max-width: 50%;
-    padding-left: 25%;
+    margin: 0 auto;
+}
+
+#about, #projects, #experience, #contact {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#headshot-container {
+    justify-content: space-between;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#headshot {
+    border: 0.3vw solid #a8579b;
+    border-radius: 50%;
+    width: 9vw;
+}
+
+#headshot:hover {
+    transition: 0.5s ease;
+    filter: grayscale(55%);
+    cursor: pointer;
 }
 
 #welcome {
@@ -63,9 +89,47 @@ nav li {
 
 #name {
     font-size: 10vw;
-    margin-top: 0px;
-    margin: 0px;
+    margin-top: 0;
+    margin: 0;
+    line-height: 1.25;
     background: -webkit-linear-gradient(#683660, #a8579b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#brief-intro {
+    margin-top: 0;
+}
+
+#line {
+    max-width: 50%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #070306;
+}
+.small-text {
+    font-size: 0.8vw;
+}
+
+.small-medium-text {
+    font-size: 1vw;
+}
+
+.medium-text {
+    font-size: 1.2vw;
+}
+
+.large-text {
+    font-size: 2vw;
+}
+
+.medium-image {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
 }
