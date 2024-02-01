@@ -59,8 +59,13 @@ nav li {
     margin: 0 auto;
 }
 
-#about, #projects, #experience, #contact {
+#about, #projects, #experience {
     max-width: 70%;
+    margin: 0 auto;
+}
+
+#contact {
+    max-width: 30%;
     margin: 0 auto;
 }
 
@@ -132,7 +137,7 @@ nav li {
 
 .medium-image {
     margin: 0 auto;
-    width: 30%;
+    width: 50%;
     border-radius: 5px;
 }
 
@@ -144,17 +149,17 @@ nav li {
 
 #socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
 }
 
-#socials i {
+#socials a i {
     font-size: 5vw;
 }
 
-#socials i:hover {
-    transition: 0.5s ease;
+#socials a i:hover {
+    transition: 0.4s ease-in;
     font-size: 5vw;
     color:#a8579b;
 }
