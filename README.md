@@ -1,6 +1,5 @@
 # PortfolioSite
-A simple website to display some of my personal work and endeavours
+A simple website I made to learn some more about HTML & CSS and also to display some of my personal work and endeavours!
 
 ## Current development goals
-- Add about, projects, experience and contact section
-- Add support for mobile use
+- Enchance mobile support

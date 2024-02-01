@@ -163,3 +163,72 @@ a {
     text-decoration: none;
     color: #070306;
 }
+
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        justify-content: space-between;
+        margin-left: 5px;
+    }
+
+    #headshot-container {
+        display: block;
+        text-align: center;
+    }
+
+    #headshot {
+        width: 50%;
+    }
+
+    #welcome {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #name {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #brief-intro {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .medium-image {
+        width: 100%;
+    }
+
+    .large-text {
+        font-size: 2.5vw;
+    }
+
+    .medium-text {
+        font-size: 1.8vw;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    #projects {
+        text-align: left;
+    }
+
+    #socials {
+        text-align: center;
+    }
+
+    #socials i {
+        font-size: 4vw;
+        margin-bottom: 10px;
+    }
+}
