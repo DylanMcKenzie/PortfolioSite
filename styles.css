@@ -6,6 +6,7 @@ html {
     padding: 0px;
     margin: 0px;
     font-family: 'Rubik';
+    scroll-behavior: smooth;
 }
 
 body {
@@ -120,15 +121,45 @@ nav li {
 
 .large-text {
     font-size: 2vw;
+    background-color: #EEDDEB;
+    padding: 5px;
+    max-width: fit-content;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 3vw;
+    text-align: center;
 }
 
 .medium-image {
-    width: 40%;
-    border-radius: 15px;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 5px;
 }
 
 .content {
     text-align: center;
     margin: 0 auto;
     max-width: 80%;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#socials i {
+    font-size: 5vw;
+}
+
+#socials i:hover {
+    transition: 0.5s ease;
+    font-size: 5vw;
+    color:#a8579b;
+}
+
+a {
+    text-decoration: none;
+    color: #070306;
 }
