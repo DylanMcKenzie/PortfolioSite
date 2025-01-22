@@ -233,3 +233,29 @@ a {
         margin-bottom: 10px;
     }
 }
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#image-container img {
+    border-radius: 5%;
+    height: 20vw;
+    margin: 10px;
+}
+  
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.icons-container img {
+    width: 5vw;
+    height: auto;
+}
