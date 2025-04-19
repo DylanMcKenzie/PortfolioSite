@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik");
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   background-color: #f5ebf3;
   color: #070306;
@@ -7,6 +11,8 @@ html {
   margin: 0px;
   font-family: "Rubik";
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 
 body {
@@ -81,7 +87,7 @@ nav li a::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 0;
   bottom: 0;
   left: 50%;
   background-color: #a8579b;
@@ -89,8 +95,8 @@ nav li a::after {
 }
 
 nav li a:hover::after {
-  width: 80%;
-  left: 10%;
+  width: 0;
+  left: 50%;
 }
 
 #intro {
