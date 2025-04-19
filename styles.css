@@ -128,6 +128,10 @@ nav li a:hover::after {
   margin: 0 auto;
 }
 
+#experience {
+  text-align: center;
+}
+
 #contact {
   max-width: 30%;
   margin: 0 auto;
@@ -231,19 +235,19 @@ nav li a:hover::after {
   background-color: #070306;
 }
 .small-text {
-  font-size: 0.8vw;
+  font-size: clamp(12px, 0.8vw, 16px);
 }
 
 .small-medium-text {
-  font-size: 1vw;
+  font-size: clamp(14px, 1vw, 18px);
 }
 
 .medium-text {
-  font-size: 1.2vw;
+  font-size: clamp(16px, 1.2vw, 20px);
 }
 
 .large-text {
-  font-size: 2vw;
+  font-size: clamp(18px, 2vw, 28px);
   background-color: #eeddeb;
   padding: 5px;
   max-width: fit-content;
@@ -274,12 +278,13 @@ nav li a:hover::after {
 
 #socials a i {
   font-size: 5vw;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #socials a i:hover {
   transition: 0.4s ease-in;
-  font-size: 5vw;
   color: #a8579b;
+  transform: scale(1.1);
 }
 
 a {
@@ -320,22 +325,23 @@ a {
   }
 
   #welcome {
-    font-size: 3vw;
+    font-size: 16px;
     text-align: center;
   }
 
   #name {
-    font-size: 6vw;
+    font-size: 28px;
     text-align: center;
   }
 
   #tagline {
-    font-size: 3vw;
+    font-size: 16px;
   }
 
   #brief-intro {
     text-align: center;
-    font-size: 2vw;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .medium-image {
@@ -343,11 +349,11 @@ a {
   }
 
   .large-text {
-    font-size: 2.5vw;
+    font-size: 20px;
   }
 
   .medium-text {
-    font-size: 1.8vw;
+    font-size: 16px;
   }
 
   .content {
@@ -360,11 +366,25 @@ a {
 
   #socials {
     text-align: center;
+    padding: 15px;
+    max-width: 320px;
+    margin: 0 auto;
+    gap: 5px;
   }
 
-  #socials i {
-    font-size: 4vw;
-    margin-bottom: 10px;
+  #socials a {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  #socials a i {
+    font-size: 40px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  #socials a i:hover {
+    transform: scale(1.15);
   }
 
   #intro {
@@ -388,7 +408,7 @@ a {
   }
 
   .intro-btn {
-    font-size: 2.5vw;
+    font-size: 14px;
     padding: 10px 20px;
   }
 
@@ -402,6 +422,39 @@ a {
   #experience,
   #contact {
     padding: 40px 0;
+  }
+
+  #contact {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 10px;
+  }
+  
+  #experience {
+    max-width: 90%;
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  .experience-header {
+    text-align: left;
+    padding: 12px 15px;
+  }
+
+  .experience-content.active {
+    text-align: left;
+    padding: 15px;
+  }
+
+  .experience-item {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .experience-content ul,
+  .experience-content ol {
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -447,6 +500,7 @@ a {
   padding: 10px 15px;
   background-color: #eeddeb;
   transition: background-color 0.3s ease;
+  text-align: left;
 }
 
 .experience-header:hover {
@@ -459,11 +513,18 @@ a {
   transition: max-height 0.4s ease;
   padding: 0 15px;
   background-color: #f5ebf3;
+  text-align: left;
 }
 
 .experience-content.active {
   max-height: 2000px;
   padding: 15px;
+}
+
+.experience-content ul,
+.experience-content ol {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .toggle-icon {
@@ -530,16 +591,17 @@ a {
 }
 
 .project-title {
-  font-size: 1.3vw;
+  font-size: clamp(18px, 1.3vw, 24px);
   margin-top: 0;
   margin-bottom: 10px;
   color: #683660;
 }
 
 .project-description {
-  font-size: 0.9vw;
+  font-size: clamp(14px, 0.9vw, 18px);
   margin-bottom: 15px;
   color: #333;
+  line-height: 1.5;
 }
 
 .project-tech {
@@ -554,7 +616,7 @@ a {
   color: white;
   padding: 3px 8px;
   border-radius: 15px;
-  font-size: 0.8vw;
+  font-size: clamp(12px, 0.8vw, 15px);
 }
 
 .project-links {
@@ -570,7 +632,7 @@ a {
   color: white !important;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 0.9vw;
+  font-size: clamp(14px, 0.9vw, 18px);
   transition: background-color 0.3s ease;
 }
 
@@ -584,19 +646,19 @@ a {
   }
 
   .project-title {
-    font-size: 3vw;
+    font-size: 20px;
   }
 
   .project-description {
-    font-size: 2vw;
+    font-size: 14px;
   }
 
   .tech-tag {
-    font-size: 1.8vw;
+    font-size: 12px;
   }
 
   .project-link {
-    font-size: 1.8vw;
+    font-size: 14px;
   }
 }
 
@@ -657,7 +719,7 @@ a {
 
 .skill-name {
   margin-top: 8px;
-  font-size: 0.9vw;
+  font-size: clamp(12px, 0.9vw, 16px);
   text-align: center;
   color: #070306;
   font-weight: 500;
@@ -675,7 +737,7 @@ a {
   }
 
   .skill-name {
-    font-size: 2vw;
+    font-size: 12px;
   }
 
   .skill-item img {
@@ -709,7 +771,7 @@ a {
   text-align: center;
   margin-bottom: 30px;
   line-height: 1.6;
-  font-size: 1.3vw;
+  font-size: clamp(16px, 1.3vw, 22px);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -751,14 +813,14 @@ a {
 }
 
 .highlight-card h4 {
-  font-size: 1.3vw;
+  font-size: clamp(18px, 1.3vw, 24px);
   margin: 10px 0;
   color: #683660;
   font-weight: 600;
 }
 
 .highlight-card p {
-  font-size: 1vw;
+  font-size: clamp(14px, 1vw, 18px);
   color: #333;
   margin: 0;
   line-height: 1.5;
@@ -775,15 +837,16 @@ a {
   }
 
   .highlight-card h4 {
-    font-size: 2.5vw;
+    font-size: 18px;
   }
 
   .highlight-card p {
-    font-size: 2vw;
+    font-size: 14px;
   }
 
   .centered-text {
-    font-size: 2vw;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
@@ -799,7 +862,7 @@ a {
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
-  font-size: 1vw;
+  font-size: clamp(14px, 1vw, 18px);
 }
 
 .primary-btn {
