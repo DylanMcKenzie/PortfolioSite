@@ -70,7 +70,7 @@ nav li a {
   display: inline-block;
 }
 
-nav li a:hover, 
+nav li a:hover,
 nav li a:focus {
   background-color: #eeddeb;
   color: #a8579b;
@@ -78,7 +78,7 @@ nav li a:focus {
 }
 
 nav li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -200,7 +200,7 @@ nav li a:hover::after {
 }
 
 .company-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
