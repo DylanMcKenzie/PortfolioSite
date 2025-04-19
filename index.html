@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/1691e06a6f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <nav>
@@ -22,235 +23,483 @@
       </ul>
     </nav>
     <div id="intro">
-      <h3 id="welcome"><i class="fa-solid fa-terminal"></i>Hi there, I'm</h3>
-      <h3 id="name">
-        Dylan
-        <div id="headshot-container">
-          <a href="">
-            <img id="headshot" src="https://avatars.githubusercontent.com/u/71850587" />
-          </a>
-        </div>
-      </h3>
-      <h3 id="name">McKenzie</h3>
+      <div class="intro-content">
+        <h3 id="welcome">
+          <i class="fa-solid fa-terminal"></i>Hello There, I'm
+        </h3>
+        <h2 id="name">Dylan McKenzie</h2>
+        <p id="tagline">Software Engineer @ <a href="https://www.kainos.com" class="company-link">Kainos</a><br>Computing Systems Student @ <a href="https://www.ulster.ac.uk" class="company-link">Ulster</a></p>
+      </div>
+      <div class="intro-image">
+        <img
+          id="headshot"
+          src="https://avatars.githubusercontent.com/u/71850587"
+          alt="Dylan McKenzie"
+        />
+      </div>
     </div>
     <div id="line"></div>
     <div id="about">
-      <h2 class="large-text">A bit about myself...</h2>
-      <p class="medium-text">
-        I'm currently a Software Engineer at Kainos and a part-time Computing
-        Systems student at Ulster University. My fascination with computing
-        started at a young age, and I've been exploring new technologies and
-        building innovative solutions ever since.
-      </p>
+      <h2 class="large-text">A Bit About Myself...</h2>
 
+      <div class="about-container">
+        <div class="about-text">
+          <p class="medium-text centered-text">
+            I'm currently a Software Engineer at Kainos and a part-time
+            Computing Systems student at Ulster University. My fascination with
+            computing started at a young age, and I've been exploring new
+            technologies and building innovative solutions ever since.
+          </p>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h4>Software Engineer</h4>
+              <p>
+                I develop efficient solutions to complex problems with a passion
+                for clean code
+              </p>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h4>Lifelong Learner</h4>
+              <p>
+                I continuously expand my technical knowledge through education
+                and practice
+              </p>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-camera"></i>
+              <h4>Photography</h4>
+              <p>
+                I capture meaningful moments and create visual stories in my
+                free time
+              </p>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-users"></i>
+              <h4>Team Player</h4>
+              <p>
+                I thrive in collaborative environments and enjoy working with
+                diverse teams
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="skills-section">
         <h2 class="large-text">Skills &amp; Tools</h2>
-        <br />
-        <div class="icons-container">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            alt="HTML5"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            alt="CSS3"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-            alt="TypeScript"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-            alt="Java"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            alt="Node.js"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-            alt="MySQL"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-            alt="PostgreSQL"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-            alt="Linux"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-            alt="VS Code"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
-            alt="IntelliJ"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datagrip/datagrip-original.svg"
-            alt="DataGrip"
-          />
+
+        <div class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+              />
+              <span class="skill-name">HTML5</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+              />
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+              />
+              <span class="skill-name">TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
+              <span class="skill-name">React</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+              />
+              <span class="skill-name">Next.js</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+              />
+              <span class="skill-name">Java</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+              />
+              <span class="skill-name">Node.js</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+              <span class="skill-name">MySQL</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+              />
+              <span class="skill-name">PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                alt="Linux"
+              />
+              <span class="skill-name">Linux</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                alt="VS Code"
+              />
+              <span class="skill-name">VS Code</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+                alt="IntelliJ"
+              />
+              <span class="skill-name">IntelliJ</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datagrip/datagrip-original.svg"
+                alt="DataGrip"
+              />
+              <span class="skill-name">DataGrip</span>
+            </div>
+          </div>
         </div>
       </section>
     </div>
     <div id="projects">
       <h2 class="large-text">Here are the projects I have worked on!</h2>
-      <div class="content">
-        <h3 class="medium-text">
-          <a href="https://abhsgame.dmck.dev/"
-            >Ashfield Boys' Open Night Game</a
-          >
-        </h3>
-        <div id="image-container">
-          <img src="images/playingABHSON.jpg" />
-          <img src="images/ABHSONLB.jpg" />
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="images/playingABHSON.jpg"
+              alt="Ashfield Boys' Open Night Game"
+            />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Open Night Game</h3>
+            <p class="project-description">
+              A simple yet engaging game for P6 and P7 students to demonstrate
+              what could be created in the coding club that I used to run after
+              school.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://abhsgame.dmck.dev/" class="project-link">
+                <i class="fa-solid fa-globe"></i> Live Demo
+              </a>
+              <a href="https://github.com/DylanMcKenzie/ABHSOpenNightGame" class="project-link">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
-        <p class="medium-text">
-          This is a simple yet engaging game I made for the open night aimed at
-          P6 and P7 students looking to come to my school to demonstrate what
-          could be created in the coding club that I run for younger pupils
-          after school!
-        </p>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/lumos.png" alt="Portfolio Website" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">LumosMaxima</h3>
+            <p class="project-description">
+              There was no way to only switch app colour in Windows
+              automatically. So I made this basic script to automatically swap
+              app theme colour between Light and Dark mode based on the time of
+              day.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PowerShell</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/DylanMcKenzie/LumosMaxima"
+                class="project-link"
+              >
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/donezo.png" alt="donezo" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">donezo</h3>
+            <p class="project-description">
+              This web extension helps users block access to chosen websites.
+              It's currently under development as the foundational piece for a
+              future productivity suite.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fa-solid fa-globe"></i> WIP
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/igloocode.png" alt="Portfolio Website" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">IglooCode 2025</h3>
+            <p class="project-description">
+              I worked on a few tickets for a kids' coding competition, where
+              participants competed to solve coding problems. It was a fun and
+              rewarding experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Vite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://verglas.io/" class="project-link">
+                <i class="fa-solid fa-globe"></i> Website
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="experience">
       <h2 class="large-text">Here is all my experience to date!</h2>
-      <ul>
-        <li>
-          <h3 class="medium-text">
-            Pathway Opportunity Programme - Queen’s University Belfast
-          </h3>
-          <p class="medium-text">
-            This year-long programme gave me a look into University life and
-            helped me better understand it. During the programme, I participated
-            in a Summer School in which I was taught game development in Java
-            and had to sit an exam to determine if I would get 0-2 grade
-            reductions for a guaranteed conditional offer and ended up receiving
-            2 grade reductions!
-          </p>
-          <p class="medium-text"><i>January - November 2023</i></p>
-        </li>
-        <li>
-          <h3 class="medium-text">
-            5 Day Work Experience - Generation Innovation
-          </h3>
-          <p class="medium-text">
-            Myself and a diverse group of 8 were given a problem by a local
-            Belfast company, Instil Software, and to solve it created an Edtech
-            website using ChatGPTs API to give students a list of topics with
-            descriptions based on a prompted subject. We also grew our social
-            media from 0 to 200 followers in 5 days and used polls to better
-            understand our target market!
-          </p>
-          <p class="medium-text"><i>June 2023</i></p>
-        </li>
-        <li>
-          <h3 class="medium-text">CodeCamp - Kainos</h3>
-          <p class="medium-text">
-            During the 5 day CodeCamp I was tasked with creating and presenting
-            a website, I chose to create one on gaming and it was focused around
-            giving simple tutorials and introductions to games, I also added
-            quizzes for each game. This vastly improved my web development
-            skills and got me hooked on HTML, CSS & JS. There were also some
-            amazing talks that gave me further insight into the IT world.
-          </p>
-          <p class="medium-text"><i>August 2023</i></p>
-        </li>
-        <li>
-          <h3 class="medium-text">3 Day Work Experience - Kainos</h3>
-          <p class="medium-text">
-            I have completed a multitude of Kainos Work Experiences, in which I
-            was put in groups of 3-4 and had to pick 2 words from a list of IT
-            related words and make a website based on those, then go on to
-            present it. This was really fun and further improved my teamwork,
-            communication and people skills.
-          </p>
-          <p class="medium-text"><i>November 2023 and January 2024</i></p>
-        </li>
-        <li>
-          <h3 class="medium-text">
-            Coding Club Creator - Ashfield Boys' High School
-          </h3>
-          <p class="medium-text">
-            Having a passion for computing and programming for years made me
-            realise that I wanted to share something so great and try to spark a
-            passion within younger people. Therefore I created the coding club
-            at my school, completely independently and made lesson plans,
-            advertising graphics, brought on helpers and even spoke at
-            assemblies to spread the word about the club.
-          </p>
-          <p class="medium-text"><i>November 2023 - July 2024</i></p>
-        </li>
-        <li>
-          <h3 class="medium-text">AWS Cloud Practitioner Essentials Course</h3>
-          <p class="medium-text">
-            After an AWS talk at Kainos CodeCamp 2023 I was really intrigued and
-            later found AWS Skill Builder. I wanted to follow a course such as
-            this one, as I felt this was a bit of a knowledge gap for me and
-            also something that interested me. I was taught a great deal about
-            AWS and was able to get a good understanding of its uses in the
-            workplace and its benefits.
-          </p>
-          <p class="medium-text"><i>February 2024</i></p>
-        </li>
-        <li>
-          <h3 class="medium-text">Kainos Employment</h3>
-          <p class="medium-text">
-            I joined Kainos after leaving school through the Earn As You Learn
-            scheme. It has been very rewarding and I have met many nice people,
-            while vastly improving my software engineer capabilities!
-          </p>
+      <ul class="experience-list">
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">Employment - Kainos</h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              I joined Kainos after leaving school through the Earn As You Learn
+              scheme. It has been very rewarding and I have met many nice
+              people, while vastly improving my software engineer capabilities!
+            </p>
 
-          <p class="medium-text">
-            After joining Kainos, I was immediately placed into a team of eight,
-            all of us participating in the Earn As You Learn scheme. Together,
-            we embarked on a 16-week engineering academy where we were
-            introduced to the fundamentals of software engineering. Rather than
-            focusing on specific programming languages, the academy emphasised
-            learning how to think critically and solve problems as a
-            developer—teaching us to programme, not just code.
-          </p>
-          <p class="medium-text">
-            We started with the data layer, using MySQL to design and manage
-            databases. After presenting our work, we moved on to the logic
-            layer, where we developed backend functionality using Java. Finally,
-            we tackled the presentation layer, creating user interfaces with
-            TypeScript and Nunjucks. Along the way, we also learned automated
-            testing, covering unit tests, integration tests, and UI testing. We
-            explored accessibility testing using Pa11y and performance testing
-            with JMeter, which gave us a deeper understanding of how to ensure
-            quality and scalability in our work. The academy culminated in a
-            two-week project where we built a job application website, combining
-            all the skills we had learned throughout the course. The tickets
-            were assigned to us, and we successfully delivered the MVP.
-          </p>
-          <p class="medium-text">
-            In addition to our core learning, we had the privilege of attending
-            amazing talks from skilled professionals within the company. Their
-            insights and experiences were incredibly inspiring. We also
-            participated in workshops run by these experts, which helped us
-            deepen our knowledge on specific topics and further refine our
-            skills.
-          </p>
-          <p class="medium-text">
-            Presenting our project to senior staff was nerve-racking, but
-            everyone was so lovely and encouraging. Their support made me
-            realise my anxiety was completely unnecessary.
-          </p>
-          <p class="medium-text">
-            Looking back, I’m incredibly proud of my progress during the
-            academy. I’ve never had so much fun learning, and I feel like I
-            gained an incredible amount from the experience. We achieved so much
-            in just 16 weeks, and I even surprised myself with what I was
-            capable of.
-          </p>
+            <p class="medium-text">
+              After joining Kainos, I was immediately placed into a team of
+              eight, all of us participating in the Earn As You Learn scheme.
+              Together, we embarked on a 16-week engineering academy where we
+              were introduced to the fundamentals of software engineering.
+              Rather than focusing on specific programming languages, the
+              academy emphasised learning how to think critically and solve
+              problems as a developer—teaching us to programme, not just code.
+            </p>
+            <p class="medium-text">
+              We started with the data layer, using MySQL to design and manage
+              databases. After presenting our work, we moved on to the logic
+              layer, where we developed backend functionality using Java.
+              Finally, we tackled the presentation layer, creating user
+              interfaces with TypeScript and Nunjucks. Along the way, we also
+              learned automated testing, covering unit tests, integration tests,
+              and UI testing. We explored accessibility testing using Pa11y and
+              performance testing with JMeter, which gave us a deeper
+              understanding of how to ensure quality and scalability in our
+              work. The academy culminated in a two-week project where we built
+              a job application website, combining all the skills we had learned
+              throughout the course. The tickets were assigned to us, and we
+              successfully delivered the MVP.
+            </p>
+            <p class="medium-text">
+              In addition to our core learning, we had the privilege of
+              attending amazing talks from skilled professionals within the
+              company. Their insights and experiences were incredibly inspiring.
+              We also participated in workshops run by these experts, which
+              helped us deepen our knowledge on specific topics and further
+              refine our skills.
+            </p>
+            <p class="medium-text">
+              Presenting our project to senior staff was nerve-racking, but
+              everyone was so lovely and encouraging. Their support made me
+              realise my anxiety was completely unnecessary.
+            </p>
+            <p class="medium-text">
+              Looking back, I'm incredibly proud of my progress during the
+              academy. I've never had so much fun learning, and I feel like I
+              gained an incredible amount from the experience. We achieved so
+              much in just 16 weeks, and I even surprised myself with what I was
+              capable of.
+            </p>
+            <p class="medium-text experience-date">
+              <i>September 2024 - Present</i>
+            </p>
+          </div>
+        </li>
 
-          <p class="medium-text"><i>September 2024 - Present</i></p>
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">
+              Cloud Practitioner Essentials Course - AWS
+            </h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              After an AWS talk at Kainos CodeCamp 2023 I was really intrigued
+              and later found AWS Skill Builder. I wanted to follow a course
+              such as this one, as I felt this was a bit of a knowledge gap for
+              me and also something that interested me. I was taught a great
+              deal about AWS and was able to get a good understanding of its
+              uses in the workplace and its benefits.
+            </p>
+            <p class="medium-text experience-date"><i>February 2024</i></p>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">
+              Coding Club Creator - Ashfield Boys' High School
+            </h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              Having a passion for computing and programming for years made me
+              realise that I wanted to share something so great and try to spark
+              a passion within younger people. Therefore I created the coding
+              club at my school, completely independently and made lesson plans,
+              advertising graphics, brought on helpers and even spoke at
+              assemblies to spread the word about the club.
+            </p>
+            <p class="medium-text experience-date">
+              <i>November 2023 - July 2024</i>
+            </p>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">3 Day Work Experience - Kainos</h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              I have completed a multitude of Kainos Work Experiences, in which
+              I was put in groups of 3-4 and had to pick 2 words from a list of
+              IT related words and make a website based on those, then go on to
+              present it. This was really fun and further improved my teamwork,
+              communication and people skills.
+            </p>
+            <p class="medium-text experience-date">
+              <i>November 2023 and January 2024</i>
+            </p>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">CodeCamp - Kainos</h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              During the 5 day CodeCamp I was tasked with creating and
+              presenting a website, I chose to create one on gaming and it was
+              focused around giving simple tutorials and introductions to games,
+              I also added quizzes for each game. This vastly improved my web
+              development skills and got me hooked on HTML, CSS & JS. There were
+              also some amazing talks that gave me further insight into the IT
+              world.
+            </p>
+            <p class="medium-text experience-date"><i>August 2023</i></p>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">
+              5 Day Work Experience - Generation Innovation
+            </h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              Myself and a diverse group of 8 were given a problem by a local
+              Belfast company, Instil Software, and to solve it created an
+              Edtech website using ChatGPTs API to give students a list of
+              topics with descriptions based on a prompted subject. We also grew
+              our social media from 0 to 200 followers in 5 days and used polls
+              to better understand our target market!
+            </p>
+            <p class="medium-text experience-date"><i>June 2023</i></p>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <div class="experience-header">
+            <h3 class="medium-text">
+              Pathway Opportunity Programme - Queen's University Belfast
+            </h3>
+            <span class="toggle-icon"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></span>
+          </div>
+          <div class="experience-content">
+            <p class="medium-text">
+              This year-long programme gave me a look into University life and
+              helped me better understand it. During the programme, I
+              participated in a Summer School in which I was taught game
+              development in Java and had to sit an exam to determine if I would
+              get 0-2 grade reductions for a guaranteed conditional offer and
+              ended up receiving 2 grade reductions!
+            </p>
+            <p class="medium-text experience-date">
+              <i>January - November 2023</i>
+            </p>
+          </div>
         </li>
       </ul>
     </div>
